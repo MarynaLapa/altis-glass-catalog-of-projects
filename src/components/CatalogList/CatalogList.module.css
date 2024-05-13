@@ -1,0 +1,14 @@
+.catalogList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.catalogItem {
+    height: 380px;
+    display: flex;
+    align-items: flex-start;
+}

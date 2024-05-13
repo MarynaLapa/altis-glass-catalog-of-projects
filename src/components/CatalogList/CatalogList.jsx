@@ -1,13 +1,14 @@
-import db from '../../db.json'
-import css from '../Card/Card.module.css'
 import Card from '../Card/Card'
+import css from './CatalogList.module.css'
+
+import db from '../../db.json'
 
 const CatalogList = () => {
 
   return (
-    <ul className={css.list}>
+    <ul className={css.catalogList}>
       {db.map((card, index) =>
-        <li key={index} className={css.item}>
+        <li key={index} className={css.catalogItem}>
           <Card cardInfo={card}/>
         </li>
       )} 
