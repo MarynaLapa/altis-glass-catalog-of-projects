@@ -1,6 +1,7 @@
 {
-  "name": "altis-glass",
+  "name": "altis-glass-catalog-of-projects",
   "private": true,
+  "homepages": "https://marynalapa.github.io/altis-glass-catalog-of-projects/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -11,7 +12,10 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.4",
+    "react-router-dom": "^6.23.1",
+    "react-select": "^5.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

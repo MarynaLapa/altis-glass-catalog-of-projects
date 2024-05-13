@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.item {
+    height: 380px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: #FFF;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    height: 380px;
+}
+
+.imgBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .imgBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 30px;
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 110px;
+    height: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card .content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a5ad5;
+    margin-bottom: 4px;
+}
+
+.cardScroll {
+    overflow-y: scroll;
+    max-height: 150px;
+    width: 320px;
+} 
+
+.cardScroll::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+
+.cardScroll::-webkit-scrollbar-track {
+    background: transparent;
+    width: 2px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.cardScroll::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    width: 2px;
+    max-height: 24%;
+    background-color: #d5e3e8;
+}
+
+.table {
+    color: #333;
+    width: 280px;
+    text-align: start;
+    font-size: 14px;
+    margin: auto;
+}
+
+.tableTitle {
+    margin-bottom: 8px;
+}
+
+.tableFirstColumn {
+    font-weight: 600;
+    width: 128px;
+    vertical-align: text-top;
+    padding-bottom: 4px;
+}
+
+.card .content a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: #0a5ad5;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.card .content a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .card .imgBox {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .card .content a {
+        font-size: 0.9rem;
+    }
+}
