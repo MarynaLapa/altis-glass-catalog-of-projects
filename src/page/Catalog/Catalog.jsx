@@ -1,11 +1,11 @@
 import CatalogList from '../../components/CatalogList/CatalogList'
-// import FilterForm from '../../components/FilterForm/FilterForm'
+import FilterForm from '../../components/FilterForm/FilterForm'
 
 const Catalog = () => {
     return (
         <section>
             <div className='container'>
-                {/* <FilterForm /> */}
+                <FilterForm />
                 <CatalogList />
             </div> 
         </section>
