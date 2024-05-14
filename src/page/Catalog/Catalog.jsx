@@ -6,6 +6,7 @@ const Catalog = () => {
         <section>
             <div className='container'>
                 <FilterForm />
+    
                 <CatalogList />
             </div> 
         </section>

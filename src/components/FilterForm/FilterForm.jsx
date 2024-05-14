@@ -1,31 +1,54 @@
 import React, { useState } from 'react'
-import ReactSelect from "react-select";
+import Select from "react-select";
 import { Controller, useForm } from 'react-hook-form'
 import { glassCompany } from './glassData';
 
 const FilterForm = () => {
 
+    const [selectedOption, setSelectedOption] = useState(null)
+
     const defaultValues = {
-        ReactSelect: { value: "", label: "" }
+        // companyName: { value: "", label: "" }
     };
 
-    const { handleSubmit, reset, setValue, control } = useForm({ defaultValues });
+    const { handleSubmit, register, reset, setValue, control } = useForm({ defaultValues });
+
 
     return (
-    <form onSubmit={handleSubmit((data) => console.log(data))} className="form">
-        <Controller
-            name="ReactSelect"
-            control={control}
-            render={({ field }) => (
-                <ReactSelect
-                isClearable
-                {...field}
-                options={glassCompany}
-                />
-            )}
-        />
-    </form>
-  )
+        <form onSubmit={handleSubmit((data) => console.log(data))} className="form" action='#'>
+            <label htmlFor="companyName"></label>
+            <Controller
+                name="companyName"
+                control={control}
+                    render={({ field }) => (
+                        <Select
+                            placeholder="Виберіть компанію-виробника скла"
+                            id="companyName"
+                            isClearable
+                            {...field}
+                            options={glassCompany}
+                            onChange={value => setSelectedOption(value)}
+                        />
+                    )}
+            />
+
+            <label htmlFor="glassName"></label>
+            <Controller
+                name="glassName"
+                control={control}
+                    render={({ field }) => (
+                        <Select
+                            placeholder="Виберіть зовнішнє скло"
+                            id="glassName"
+                            isClearable
+                            {...field}
+                            options={glassCompany}
+                        />
+                    )}
+            />
+
+        </form>
+    )
 }
 
 export default FilterForm
