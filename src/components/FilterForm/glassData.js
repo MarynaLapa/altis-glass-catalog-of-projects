@@ -28,12 +28,12 @@ const SolarOptions = [
     { idGrup: "1", value: "SunGuard Solar Bronze 20", label: "Solar Bronze 20", production: true },
     { idGrup: "1", value: "SunGuard Solar Gold 20", label: "Solar Gold 20", production: true },
     { idGrup: "1", value: "SunGuard Solar Grey 20", label: "Solar Grey 20", production: true },
-    { idGrup: "1", value: "Solar Neutral 67", label: "Solar Neutral 67", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "Solar Light Blue 52", label: "Solar Light Blue 52", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "Solar Silver Grey 32", label: "Solar Silver Grey 32", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "Solar Royal Blue 20", label: "Solar Royal Blue 20", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "Solar Neutral 34", label: "Solar Neutral 34", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "Solar Silver 20", label: "Solar Silver 20", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Solar Neutral 67", label: "Solar Neutral 67", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Solar Light Blue 52", label: "Solar Light Blue 52", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Solar Silver Grey 32", label: "Solar Silver Grey 32", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Solar Royal Blue 20", label: "Solar Royal Blue 20", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Solar Neutral 34", label: "Solar Neutral 34", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Solar Silver 20", label: "Solar Silver 20", production: true, possibilityOfUse: false },
 ]
 
 // SunGuard® High Performance
@@ -65,17 +65,17 @@ const SuperNeutralOptions = [
     { idGrup: "1", value: "SunGuard SN 51", label: "SN 51", production: true },
     { idGrup: "1", value: "SunGuard SN 63", label: "SN 63", production: true },
     { idGrup: "1", value: "SunGuard SN 75", label: "SN 75", production: true },
-    { idGrup: "1", value: "Neutral 80/58", label: "Neutral 80/58", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "SN 70/41", label: "SN 70/41", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "SN 51/28", label: "SN 51/28", production: true, possibilityOfUse: false },
-    { idGrup: "1", value: "SN 62/34", label: "SN 62/34", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard Neutral 80/58", label: "Neutral 80/58", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard SN 70/41", label: "SN 70/41", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard SN 51/28", label: "SN 51/28", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard SN 62/34", label: "SN 62/34", production: true, possibilityOfUse: false },
 ]
 
 // SunGuard® eXtraSelective
 const eXtraSelectiveOptions = [
-    { idGrup: "1", value: "SNX 50", label: "SNX 50" },
-    { idGrup: "1", value: "SNX 60", label: "SNX 60" },
-    { idGrup: "1", value: "SNX 70", label: "SNX 70" },
+    { idGrup: "1", value: "SunGuard SNX 50", label: "SNX 50", production: true },
+    { idGrup: "1", value: "SunGuard SNX 60", label: "SNX 60", production: true },
+    { idGrup: "1", value: "SunGuard SNX 70", label: "SNX 70", production: true },
 ]
 
 // ClimaGuard®
@@ -90,10 +90,73 @@ const climaGuard = [
 
 //LamiGlass®  
 const lamiGlass = [
-    { idGrup: "1", value: "LamiGlass Acoustic", label: "LamiGlass Acoustic" },
-    { idGrup: "1", value: "LamiGlass Color", label: "LamiGlass Color" },
-    { idGrup: "1", value: "LamiGlass ExtraClear", label: "LamiGlass ExtraClear" },
-    { idGrup: "1", value: "LamiGlass UltraClear Neutral", label: "LamiGlass  UltraClear Neutral" },
+    { idGrup: "1", value: "LamiGlass Acoustic", label: "LamiGlass Acoustic", production: true },
+    { idGrup: "1", value: "LamiGlass Color", label: "LamiGlass Color", production: true },
+    { idGrup: "1", value: "LamiGlass ExtraClear", label: "LamiGlass ExtraClear", production: true },
+    { idGrup: "1", value: "LamiGlass UltraClear Neutral", label: "LamiGlass  UltraClear Neutral", production: true },
+]
+//Planibel 
+const planibel = [
+    { idGrup: "2", value: "Planibel Bronze", label: "Bronze", production: true },
+    { idGrup: "2", value: "Planibel Grey", label: "Grey", production: true },
+    { idGrup: "2", value: "Planibel Green", label: "Green", production: true },
+    { idGrup: "2", value: "Planibel Azur", label: "Azur", production: true },
+    { idGrup: "2", value: "Planibel Dark Blue", label: "Dark Blue", production: true },
+    { idGrup: "2", value: "Planibel Priva Blue", label: "Priva Blue", production: true },
+    { idGrup: "2", value: "Planibel Dark Grey", label: "Dark Grey", production: true },
+]
+
+// Stopsol
+const stopsol = [
+    { idGrup: "2", value: "Stopsol Classic Clear", label: "Classic Clear", production: true },
+    { idGrup: "2", value: "Stopsol Classic Bronze", label: "Classic Bronze", production: true },
+    { idGrup: "2", value: "Stopsol Classic Grey", label: "Classic Grey", production: true },
+    { idGrup: "2", value: "Stopsol Classic Green", label: "Classic Green", production: true },
+    { idGrup: "2", value: "Stopsol SuperSilver Clear", label: "SuperSilver Clear", production: true },
+    { idGrup: "2", value: "Stopsol SuperSilver Grey", label: "SuperSilver Grey", production: true },
+    { idGrup: "2", value: "Stopsol SuperSilver Green", label: "SuperSilver Green", production: true },
+    { idGrup: "2", value: "Stopsol SuperSilver Dark Blue", label: "SuperSilver Dark Blue", production: true },
+    { idGrup: "2", value: "Stopsol SilverLight PrivaBlue", label: "SilverLight PrivaBlue", production: true },
+    { idGrup: "2", value: "Stopsol Phoenix Clear", label: "Phoenix Clear", production: true },
+    { idGrup: "2", value: "Stopsol Phoenix Bronze", label: "Phoenix Bronze", production: true },
+    { idGrup: "2", value: "Stopsol Phoenix Grey", label: "Phoenix Grey", production: true },
+    { idGrup: "2", value: "Stopsol Phoenix Green", label: "Phoenix Green", production: true },
+    { idGrup: "2", value: "Stopsol Phoenix Azur", label: "Phoenix Azur", production: true },
+    { idGrup: "2", value: "Stopsol Classic Dark Blue", label: "Classic Dark Blue", production: false }
+]
+
+//Sunergу 
+const sunergy = [
+    { idGrup: "2", value: "Clear", label: "Clear", production: true },
+    { idGrup: "2", value: "Grey", label: "Grey", production: true },
+    { idGrup: "2", value: "Green", label: "Green", production: true },
+    { idGrup: "2", value: "Azur", label: "Azur", production: true },
+    { idGrup: "2", value: "Dark Blue", label: "Dark Blue", production: true },
+    
+]
+//Stopray
+const stopray = [
+    { idGrup: "2", value: "Stopray NEO", label: "NEO", production: true },
+    { idGrup: "2", value: "Stopray Vision-40", label: "Vision-40", production: true },
+    { idGrup: "2", value: "Stopray Vision-50", label: "Vision-50", production: true },
+    { idGrup: "2", value: "Stopray Vision-51", label: "Vision-51", production: true },
+    { idGrup: "2", value: "Stopray Vision-60", label: "Vision-60", production: true },
+    { idGrup: "2", value: "Stopray Vision-61", label: "Vision-61", production: true },
+    { idGrup: "2", value: "Stopray Vision-72", label: "Vision-72", production: true },
+    { idGrup: "2", value: "Stopray Vision-36 T", label: "Vision-36 T", production: true },
+    { idGrup: "2", value: "Stopray Titanium 37 T", label: "Titanium 37 T", production: true },
+    { idGrup: "2", value: "Stopray Lime 61 T", label: "Lime 61 T", production: true },
+    { idGrup: "2", value: "Stopray Ultra Vision 50", label: "Ultra Vision 50", production: true },
+    { idGrup: "2", value: "Energy N", label: "Energy N", production: true },
+    { idGrup: "2", value: "Energy N T", label: "Energy N T", production: true },
+    { idGrup: "2", value: "Stopray Silver 43/25", label: "Silver 43/25", production: true },
+    { idGrup: "2", value: "Stopray Smart 51/33", label: "Smart 51/33", production: true },
+    { idGrup: "2", value: "Stopray Smart 30/20", label: "Smart 30/20", production: true }
+]
+
+//Energy light
+const energylight = [
+    { idGrup: "2", value: "Energy light", label: "Energy light", production: true }
 ]
 
 export const glassProducts = [
@@ -119,25 +182,39 @@ export const glassProducts = [
     },
     {
         label: "ClimaGuard&#174;",
-        options: HighPerformanceOptions
+        options: climaGuard
     },
     {
         label: "LamiGlass&#174;",
-        options: HighPerformanceOptions
+        options: lamiGlass
+    },
+    {
+        label: "Stopsol",
+        options: stopsol
+    },
+    {
+        label: "Planibel",
+        options: planibel
+    },
+    {
+        label: "Sunergy",
+        options: sunergy
+    },
+    {
+        label: "Stopray",
+        options: stopray
+    },
+    {
+        label: "Energy light",
+        options: energylight
     },
     
-    
-  
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
 
 
     
-
-
+    { idGrup: "1", value: "", label: "" },
+    { idGrup: "1", value: "", label: "" },
+    { idGrup: "1", value: "", label: "" },
 
 ]
 
