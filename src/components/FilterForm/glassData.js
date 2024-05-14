@@ -5,80 +5,129 @@ export const glassCompany = [
     {idGrup: "4", value: "4", label: "Pilkington" },
     {idGrup: "5", value: "5", label: "Evroglass" },
     {idGrup: "6", value: "6", label: "Şişecam" },
-    {idGrup: "7", value: "7", label: "Інша" },
+    {idGrup: "7", value: "7", label: "Іншe" }
 ]
 
+// possibilityOfUse - можливість переробки на підприємстві. Виробництво в росії. На разі не ведемо співпрацю
+
 // SunGuard® High Durable
-const sunGuardHighDurableOptions = [
-    { idGrup: "1", value: "HD Silver 70", label: "HD Silver 70" },
-    { idGrup: "1", value: "HD Diamand 66", label: "HD Diamand 66" },
-    { idGrup: "1", value: "HD Light Blue 52", label: "HD Light Blue 52" },
-    { idGrup: "1", value: "HD Neutral 67", label: "HD Neutral 67" },
-    { idGrup: "1", value: "HD Silver Grey 32", label: "HD Silver Grey 32" },
-    { idGrup: "1", value: "HD Royal Blue 20", label: "HD Royal Blue 20" },
-    { idGrup: "1", value: "HD Black", label: "HD Silver 10" },
-    { idGrup: "1", value: "HD Grey", label: "HD Silver 20" },
+const HighDurableOptions = [
+    { idGrup: "1", value: "SunGuard HD Silver 70", label: "HD Silver 70", production: true },
+    { idGrup: "1", value: "SunGuard HD Diamand 66", label: "HD Diamand 66", production: true },
+    { idGrup: "1", value: "SunGuard HD Light Blue 52", label: "HD Light Blue 52", production: true },
+    { idGrup: "1", value: "SunGuard HD Neutral 67", label: "HD Neutral 67", production: true },
+    { idGrup: "1", value: "SunGuard HD Silver Grey 32", label: "HD Silver Grey 32", production: true },
+    { idGrup: "1", value: "SunGuard HD Royal Blue 20", label: "HD Royal Blue 20", production: true },
+    { idGrup: "1", value: "SunGuard HD Black", label: "HD Silver 10", production: true },
+    { idGrup: "1", value: "SunGuard HD Grey", label: "HD Silver 20", production: true }
 ]
 
 // SunGuard® Solar
-const sunGuardSolarOptions = [
-    { idGrup: "1", value: "Solar Bright Green 20", label: "Solar Bright Green 20" },
-    { idGrup: "1", value: "Solar Bronze 20", label: "Solar Bronze 20" },
-    { idGrup: "1", value: "Solar Gold 20", label: "Solar Gold 20" },
-    { idGrup: "1", value: "Solar Grey 20", label: "Solar Grey 20" },
+const SolarOptions = [
+    { idGrup: "1", value: "SunGuard Solar Bright Green 20", label: "Solar Bright Green 20", production: true },
+    { idGrup: "1", value: "SunGuard Solar Bronze 20", label: "Solar Bronze 20", production: true },
+    { idGrup: "1", value: "SunGuard Solar Gold 20", label: "Solar Gold 20", production: true },
+    { idGrup: "1", value: "SunGuard Solar Grey 20", label: "Solar Grey 20", production: true },
+    { idGrup: "1", value: "Solar Neutral 67", label: "Solar Neutral 67", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "Solar Light Blue 52", label: "Solar Light Blue 52", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "Solar Silver Grey 32", label: "Solar Silver Grey 32", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "Solar Royal Blue 20", label: "Solar Royal Blue 20", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "Solar Neutral 34", label: "Solar Neutral 34", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "Solar Silver 20", label: "Solar Silver 20", production: true, possibilityOfUse: false },
 ]
-
-// { idGrup: "1", value: "Solar Neutral 67", label: "Solar Neutral 67" },
-// { idGrup: "1", value: "Solar Light Blue 52", label: "Solar Light Blue 52" },
-// { idGrup: "1", value: "Solar Silver Grey 32", label: "Solar Silver Grey 32" },
-// { idGrup: "1", value: "Solar Royal Blue 20", label: "Solar Royal Blue 20" },
 
 // SunGuard® High Performance
-const sunGuardHighPerformanceOptions = [
-    { idGrup: "1", value: "HP Titan 70/54", label: "HP Titan 70/54" },
+const HighPerformanceOptions = [
+    { idGrup: "1", value: "SunGuard HP Titan 70/54", label: "HP Titan 70/54", production: false, possibilityOfUse: false },
+    { idGrup: "1", value: "SunGuard HP Neutral 60/40", label: "HP Neutral 60/40", production: true },
+    { idGrup: "1", value: "SunGuard HP Neutral 50/32", label: "HP Neutral 50/32", production: true },
+    { idGrup: "1", value: "SunGuard HP Neutral 41/33", label: "HP Neutral 41/33", production: true },    
+    { idGrup: "1", value: "SunGuard HP Neutral 52/41", label: "HP Neutral 52/41", production: false  },
+    { idGrup: "1", value: "SunGuard HP Neutral 50+", label: "HP Neutral 50+", production: false },
+    { idGrup: "1", value: "SunGuard HP Silver 43/31", label: "HP Silver 43/31", production: true },
+    { idGrup: "1", value: "SunGuard HP Silver 35/26", label: "HP Silver 35/26", production: true },
+    { idGrup: "1", value: "SunGuard HP Royal Blue 41/29", label: "HP Royal Blue 41/29", production: true },
+    { idGrup: "1", value: "SunGuard HP Light Blue", label: "HP Light Blue", production: true },
+    { idGrup: "1", value: "SunGuard HP Light Bronze 41/29", label: "HP Light Bronze 41/29", production: false },
+    { idGrup: "1", value: "SunGuard HP Light Bronze 40/27", label: "HP Light Bronze 40/27", production: false },
+    { idGrup: "1", value: "SunGuard HP Bronze 40/27", label: "HP Bronze 40/27", production: true },
+    { idGrup: "1", value: "SunGuard HP Bright Green 40/29", label: "HP Bright Green 40/29", production: true },
+    { idGrup: "1", value: "SunGuard HP Amber 41/29", label: "HP Amber 41/29", production: true }
 ]
 
-// HP Titan 70/54
-// HP Neutral 60/40
-// HP Neutral 52/41
-// HP Neutral 50+
-// HP Neutral 50/32
-// HP Silver 43/31
-// HP Silver 35/26
-// HP Royal Blue 41/29
-// HP Light Bronze 41/29
-// HP Light Bronze 40/27
-// HP Bright Creen 40/29
+//  SunGuard® SuperNeutral
+const SuperNeutralOptions = [
+    { idGrup: "1", value: "SunGuard SN 70/37", label: "SN 70/37", production: true },
+    { idGrup: "1", value: "SunGuard SN 70/35", label: "SN 70/35", production: true },
+    { idGrup: "1", value: "SunGuard SN 70S", label: "SN 70S", production: true },
+    { idGrup: "1", value: "SunGuard SN 29/18", label: "SN 29/18", production: true },
+    { idGrup: "1", value: "SunGuard SN 40/23", label: "SN 40/23", production: true },
+    { idGrup: "1", value: "SunGuard SN 51", label: "SN 51", production: true },
+    { idGrup: "1", value: "SunGuard SN 63", label: "SN 63", production: true },
+    { idGrup: "1", value: "SunGuard SN 75", label: "SN 75", production: true },
+    { idGrup: "1", value: "Neutral 80/58", label: "Neutral 80/58", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SN 70/41", label: "SN 70/41", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SN 51/28", label: "SN 51/28", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "SN 62/34", label: "SN 62/34", production: true, possibilityOfUse: false },
+]
+
+// SunGuard® eXtraSelective
+const eXtraSelectiveOptions = [
+    { idGrup: "1", value: "SNX 50", label: "SNX 50" },
+    { idGrup: "1", value: "SNX 60", label: "SNX 60" },
+    { idGrup: "1", value: "SNX 70", label: "SNX 70" },
+]
+
+// ClimaGuard®
+const climaGuard = [
+    { idGrup: "1", value: "ClimaGuard Premium2 T", label: "ClimaGuard Premium2 T", production: true },
+    { idGrup: "1", value: "ClimaGuard Premium T+", label: "ClimaGuard Premium T+", production: true, possibilityOfUse: false },
+    { idGrup: "1", value: "ClimaGuard Solar", label: "ClimaGuard Solar", production: true },
+    { idGrup: "1", value: "ClimaGuard 1.0+", label: "ClimaGuard 1.0+", production: true },
+    { idGrup: "1", value: "ClimaGuard Dry", label: "ClimaGuard Dry", production: true },
+    { idGrup: "1", value: "ClimaGuard Neutral 70", label: "ClimaGuard Neutral 70", production: true },
+]
+
+//LamiGlass®  
+const lamiGlass = [
+    { idGrup: "1", value: "LamiGlass Acoustic", label: "LamiGlass Acoustic" },
+    { idGrup: "1", value: "LamiGlass Color", label: "LamiGlass Color" },
+    { idGrup: "1", value: "LamiGlass ExtraClear", label: "LamiGlass ExtraClear" },
+    { idGrup: "1", value: "LamiGlass UltraClear Neutral", label: "LamiGlass  UltraClear Neutral" },
+]
 
 export const glassProducts = [
     {
         label: "SunGuard&#174; High Durable",
-        options: sunGuardHighDurableOptions
+        options: HighDurableOptions
     }, 
     {
         label: "SunGuard&#174; Solar",
-        options: sunGuardSolarOptions
+        options: SolarOptions
     },
     {
         label: "SunGuard&#174; High Performance",
-        options: sunGuardHighPerformanceOptions
+        options: HighPerformanceOptions
     },
-  
+    {
+        label: "SunGuard&#174; SuperNeutral",
+        options: SuperNeutralOptions
+    },
+    {
+        label: "SunGuard&#174; eXtraSelective",
+        options: eXtraSelectiveOptions
+    },
+    {
+        label: "ClimaGuard&#174;",
+        options: HighPerformanceOptions
+    },
+    {
+        label: "LamiGlass&#174;",
+        options: HighPerformanceOptions
+    },
     
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
-    { idGrup: "1", value: "", label: "" },
+    
+  
     { idGrup: "1", value: "", label: "" },
     { idGrup: "1", value: "", label: "" },
     { idGrup: "1", value: "", label: "" },
