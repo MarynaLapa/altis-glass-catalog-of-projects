@@ -79,7 +79,7 @@ const eXtraSelectiveOptions = [
 ]
 
 // ClimaGuard®
-const climaGuard = [
+const climaGuardOptions = [
     { idGrup: "1", value: "ClimaGuard Premium2 T", label: "ClimaGuard Premium2 T", production: true },
     { idGrup: "1", value: "ClimaGuard Premium T+", label: "ClimaGuard Premium T+", production: true, possibilityOfUse: false },
     { idGrup: "1", value: "ClimaGuard Solar", label: "ClimaGuard Solar", production: true },
@@ -89,14 +89,14 @@ const climaGuard = [
 ]
 
 //LamiGlass®  
-const lamiGlass = [
+const lamiGlassOptions = [
     { idGrup: "1", value: "LamiGlass Acoustic", label: "LamiGlass Acoustic", production: true },
     { idGrup: "1", value: "LamiGlass Color", label: "LamiGlass Color", production: true },
     { idGrup: "1", value: "LamiGlass ExtraClear", label: "LamiGlass ExtraClear", production: true },
     { idGrup: "1", value: "LamiGlass UltraClear Neutral", label: "LamiGlass  UltraClear Neutral", production: true },
 ]
 //Planibel 
-const planibel = [
+const planibelOptions = [
     { idGrup: "2", value: "Planibel Bronze", label: "Bronze", production: true },
     { idGrup: "2", value: "Planibel Grey", label: "Grey", production: true },
     { idGrup: "2", value: "Planibel Green", label: "Green", production: true },
@@ -107,7 +107,7 @@ const planibel = [
 ]
 
 // Stopsol
-const stopsol = [
+const stopsolOptions = [
     { idGrup: "2", value: "Stopsol Classic Clear", label: "Classic Clear", production: true },
     { idGrup: "2", value: "Stopsol Classic Bronze", label: "Classic Bronze", production: true },
     { idGrup: "2", value: "Stopsol Classic Grey", label: "Classic Grey", production: true },
@@ -126,7 +126,7 @@ const stopsol = [
 ]
 
 //Sunergу 
-const sunergy = [
+const sunergyOptions = [
     { idGrup: "2", value: "Clear", label: "Clear", production: true },
     { idGrup: "2", value: "Grey", label: "Grey", production: true },
     { idGrup: "2", value: "Green", label: "Green", production: true },
@@ -135,7 +135,7 @@ const sunergy = [
     
 ]
 //Stopray
-const stopray = [
+const stoprayOptions = [
     { idGrup: "2", value: "Stopray NEO", label: "NEO", production: true },
     { idGrup: "2", value: "Stopray Vision-40", label: "Vision-40", production: true },
     { idGrup: "2", value: "Stopray Vision-50", label: "Vision-50", production: true },
@@ -155,7 +155,7 @@ const stopray = [
 ]
 
 //Energy light
-const energylight = [
+const energylightOptions = [
     { idGrup: "2", value: "Energy light", label: "Energy light", production: true }
 ]
 
@@ -182,31 +182,31 @@ export const glassProducts = [
     },
     {
         label: "ClimaGuard&#174;",
-        options: climaGuard
+        options: climaGuardOptions
     },
     {
         label: "LamiGlass&#174;",
-        options: lamiGlass
+        options: lamiGlassOptions
     },
     {
         label: "Stopsol",
-        options: stopsol
+        options: stopsolOptions
     },
     {
         label: "Planibel",
-        options: planibel
+        options: planibelOptions
     },
     {
         label: "Sunergy",
-        options: sunergy
+        options: sunergyOptions
     },
     {
         label: "Stopray",
-        options: stopray
+        options: stoprayOptions
     },
     {
         label: "Energy light",
-        options: energylight
+        options: energylightOptions
     },
     
 
