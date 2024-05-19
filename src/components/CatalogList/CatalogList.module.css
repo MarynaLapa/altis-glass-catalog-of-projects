@@ -8,7 +8,7 @@
 }
 
 .catalogItem {
-    height: 380px;
+    height: 400px;
     display: flex;
     align-items: flex-start;
 }

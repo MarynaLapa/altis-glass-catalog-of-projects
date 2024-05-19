@@ -1,53 +1,32 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Select from "react-select";
-import { Controller, useForm } from 'react-hook-form'
-import { glassCompany } from './glassData';
+import { year } from './glassData';
+import css from "./FilterForm.module.css"
+import { useDispatch } from 'react-redux';
+import { setFilter } from '../../store/filter/filterSlice';
 
 const FilterForm = () => {
 
-    const [selectedOption, setSelectedOption] = useState(null)
+    const [yearValue, setYearValue] = useState('')
 
-    const defaultValues = {
-        // companyName: { value: "", label: "" }
-    };
+    const dispatch = useDispatch()
 
-    const { handleSubmit, register, reset, setValue, control } = useForm({ defaultValues });
+    useEffect(() => {
+      
+        dispatch(setFilter(yearValue))
 
-
+    }, [yearValue])
+    
     return (
-        <form onSubmit={handleSubmit((data) => console.log(data))} className="form" action='#'>
-            <label htmlFor="companyName"></label>
-            <Controller
-                name="companyName"
-                control={control}
-                    render={({ field }) => (
-                        <Select
-                            placeholder="Виберіть компанію-виробника скла"
-                            id="companyName"
-                            isClearable
-                            {...field}
-                            options={glassCompany}
-                            onChange={value => setSelectedOption(value)}
-                        />
-                    )}
-            />
-
-            <label htmlFor="glassName"></label>
-            <Controller
-                name="glassName"
-                control={control}
-                    render={({ field }) => (
-                        <Select
-                            placeholder="Виберіть зовнішнє скло"
-                            id="glassName"
-                            isClearable
-                            {...field}
-                            options={glassCompany}
-                        />
-                    )}
-            />
-
-        </form>
+        <Select
+            className={css.select}
+            name="glassYear"
+            placeholder="Виберіть рік"
+            id="glassYear"
+            isClearable
+            options={year}
+            onChange={value => setYearValue(value)}
+        />
     )
 }
 

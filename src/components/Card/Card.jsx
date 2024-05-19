@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import css from './Card.module.css'
 
 const Card = ({ cardInfo }) => {
@@ -7,10 +8,10 @@ const Card = ({ cardInfo }) => {
     return (
     <div className={css.card}>
         <div className={css.imgBox}>
-            <img className={css.image} src="./cam-night-1.jpg" alt="" />
+                <img className={css.image} src="https://kept.com.ua/5aid/IMG_0900.jpg" alt="" />
         </div>
         <div className={css.content}>
-                <h2>{subtitle}</h2>
+                <h2 className={css.cardTitle}>{subtitle}</h2>
                 <div className={css.cardScroll}>
                     <table className={css.table}>
                         <thead>
@@ -39,7 +40,7 @@ const Card = ({ cardInfo }) => {
                     </table>
                 </div>
                
-            <a href="">Show More</a>
+            <Link to='/projectId'>Показати більше</Link>
         </div>
     </div>
   )
